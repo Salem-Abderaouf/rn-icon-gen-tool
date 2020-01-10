@@ -1,0 +1,29 @@
+{
+  "name": "rn-icon-generator",
+  "version": "1.0.0",
+  "description": "npm package for react-native devs allowed you to generate folder tree for android app all folders contain both ic_launcher and ic_launcher_round  images   ",
+  "main": "rn-app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salem-Abderaouf/react-native-gen-tool.git"
+  },
+  "keywords": [
+    "react-native",
+    "image",
+    "generator",
+    "android",
+    "icon"
+  ],
+  "author": "Salem-Abderaouf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salem-Abderaouf/react-native-gen-tool/issues"
+  },
+  "homepage": "https://github.com/Salem-Abderaouf/react-native-gen-tool#readme",
+  "dependencies": {
+    "@jimp/plugin-circle": "^0.9.3"
+  }
+}
