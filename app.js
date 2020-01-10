@@ -30,6 +30,7 @@ let {src , roundness , sizes} = image;
 }
 
 function create_zip() {
+    alert('Hello World')
     var zip = new JSZip();
 	zip.add("folder/hello1.txt", "Hello First World\n");
 	zip.add("hello2.txt", "Hello Second World\n");
