@@ -1,0 +1,36 @@
+{
+  "name": "react-native-image-gen",
+  "version": "1.0.0",
+  "description": "tool to generate images for react-native",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "babel index.js -d build && cd build && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salem-Abderaouf/react-native-gen-tool.git"
+  },
+  "keywords": [
+    "image",
+    "generator",
+    "resize"
+  ],
+  "author": "Selama Salem Abderaouf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salem-Abderaouf/react-native-gen-tool/issues"
+  },
+  "homepage": "https://github.com/Salem-Abderaouf/react-native-gen-tool#readme",
+  "dependencies": {
+    "sharp": "^0.25.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
