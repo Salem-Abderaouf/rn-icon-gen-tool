@@ -1,9 +1,12 @@
-import sharp from 'sharp';
-import fs from 'fs';
+const sharp = require('sharp');
+const fs = require('fs');
 
 const args = process.argv;
-//const inputPath = "/root/Documents/work/rn-tool/AlexandraElbakyan.jpg";
-const inputPath = args[2]
+let inputPath = args[2];
+let outputPath = args[3];
+let fit = args[4] || 'cover';
+
+
 const props = [{
     'mipmap-hdpi': 48
   },
@@ -27,36 +30,38 @@ const generateImages = (prop) => {
   const round = new Buffer.from(
     `<svg><rect x="0" y="0" width="${Number(Object.values(prop))}" height="${Number(Object.values(prop))}" rx="50%" ry="50%"/></svg>`
   );
-  // resize to 8px border-radius image
+  // Resize && clip to 8px border-radius 
   sharp(inputPath)
     .resize(Number(Object.values(prop)), Number(Object.values(prop)), {
-      fit: "cover"
+      fit
     })
     .composite([{
       input: rect,
       blend: 'dest-in'
     }])
-    .toFile(`./${Object.keys(prop)[0]}/ic_launcher.png`)
+    .toFile(`${outputPath}/${Object.keys(prop)[0]}/ic_launcher.png`)
+    .catch(err => console.log(err.message))
     .then(() => {
-      console.log(`${Object.values(prop)[0]}px Image Saved at ${Object.keys(prop)[0]}`);
+      console.log(`${Object.values(prop)[0]}px IMAGE SAVED`);
     });
-  // resize to rounded image
+  // Resize && clip to rounded image
   sharp(inputPath)
     .resize(Number(Object.values(prop)), Number(Object.values(prop)), {
-      fit: "cover"
+      fit
     })
     .composite([{
       input: round,
       blend: 'dest-in'
     }])
-    .toFile(`./${Object.keys(prop)[0]}/ic_launcher_rounded.png`)
+    .toFile(`${outputPath}/${Object.keys(prop)[0]}/ic_launcher_rounded.png`)
+    .catch(err => console.log(err.message))
     .then(() => {
-      console.log(`${Object.values(prop)[0]}px Image Saved at ${Object.keys(prop)[0]}`);
+      console.log(`${Object.values(prop)[0]}px ROUNDED IMAGE SAVED`);
     });
 }
-// function to generate a file structure
+// Function to generate a file structure
 const generateFiles = (prop) => {
-  fs.mkdir('./' + Object.keys(prop), {
+  fs.mkdir(`${outputPath}/${Object.keys(prop)[0]}`, {
     recursive: true
   }, (err) => {
     if (err) {
@@ -65,7 +70,7 @@ const generateFiles = (prop) => {
   });
   generateImages(prop)
 };
-
+// Distrubate Data 
 props.map((item) => {
   generateFiles(item)
 })
