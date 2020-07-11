@@ -1,15 +1,15 @@
 # react-native-gen-tool
 
-## Description
+## Description :
 
 Tool for react native developer to generate icons based on image with there file
 structure
 
-## Install
+## Install :
 
-#### shell\
+#### shell :
 `npm install react-native-gen-tool`
-#### shell\
+#### shell :
 `cd react-native-gen-tool && npm install`
 
 ## Usage
