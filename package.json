@@ -2,7 +2,10 @@
   "name": "rn-icon-gen-tool",
   "version": "1.0.0",
   "description": "tool to generate images for react-native",
-  "main": "index.js",
+  "main": "./lib/app.js",
+  "bin": {
+    "generate-icons": "./bin/index.js"
+  },
   "scripts": {
     "start": "npm run build",
     "build": "babel index.js -d build && cd build && node index.js",
@@ -32,5 +35,8 @@
     "@babel/preset-env": "^7.10.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
