@@ -7,16 +7,16 @@ structure
 
 ## Install :
 
-#### shell :
-`npm install react-native-gen-tool`
-#### shell :
-`cd react-native-gen-tool && npm install`
+##### shell :
+
+`npm i rn-icon-gen-tool`
 
 ## Usage
 
-`node index.js [YOUR_IMAGE_PATH] [YOUR_OUTPUT_PATH] [FIT]`
+`generate-icons [YOUR_IMAGE_PATH] [YOUR_OUTPUT_PATH] [FIT]`
 
-Fit option :\
+##### Fit option :
+
 **cover**: (default) Preserving aspect ratio, ensure the image covers both provided dimensions by cropping/clipping to fit.
 
 **contain**: Preserving aspect ratio, contain within both provided dimensions using "letterboxing" where necessary.
