@@ -1,6 +1,6 @@
 {
   "name": "rn-icon-gen-tool",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "tool to generate images for react-native",
   "main": "./lib/app.js",
   "bin": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Salem-Abderaouf/react-native-gen-tool.git"
+    "url": "git+https://github.com/Salem-Abderaouf/rn-icon-gen-tool.git"
   },
   "keywords": [
     "image",
@@ -23,9 +23,9 @@
   "author": "Selama Salem Abderaouf",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Salem-Abderaouf/react-native-gen-tool/issues"
+    "url": "https://github.com/Salem-Abderaouf/rn-icon-gen-tool/issues"
   },
-  "homepage": "https://github.com/Salem-Abderaouf/react-native-gen-tool#readme",
+  "homepage": "https://github.com/Salem-Abderaouf/rn-icon-gen-tool#readme",
   "dependencies": {
     "sharp": "^0.25.4"
   },
@@ -35,8 +35,5 @@
     "@babel/preset-env": "^7.10.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
