@@ -7,9 +7,9 @@ structure
 
 ## Install
 
-shell\
+#### shell\
 `npm install react-native-gen-tool`
-shell\
+#### shell\
 `cd react-native-gen-tool && npm install`
 
 ## Usage
