@@ -1,5 +1,5 @@
 {
-  "name": "react-native-image-gen",
+  "name": "rn-icon-gen-tool",
   "version": "1.0.0",
   "description": "tool to generate images for react-native",
   "main": "index.js",
