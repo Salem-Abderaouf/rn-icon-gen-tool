@@ -20,7 +20,17 @@
     "generator",
     "resize"
   ],
-  "author": "Selama Salem Abderaouf",
+  "contributors": [{
+      "name": "Selama Salem Abderaouf",
+      "email": "salem@softvenue.net",
+      "url": "https://github.com/Salem-Abderaouf"
+    },
+    {
+      "name": "Aissaoui Ahmed",
+      "email": "aissaoui@softvenue.net",
+      "url": "https://github.com/Aissaoui-Ahmed"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Salem-Abderaouf/rn-icon-gen-tool/issues"
