@@ -9,7 +9,9 @@ structure
 
 ##### shell :
 
-`npm i rn-icon-gen-tool`
+````bash
+npm i -g rn-icon-gen-tool
+```
 
 ## Usage
 
