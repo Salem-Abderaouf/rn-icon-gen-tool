@@ -7,15 +7,28 @@ structure
 
 ## Install :
 
-##### shell :
-
-````bash
+```bash
 npm i -g rn-icon-gen-tool
 ```
 
 ## Usage
 
-`generate-icons [YOUR_IMAGE_PATH] [YOUR_OUTPUT_PATH] [FIT]`
+```bash
+generate-icons --help
+```
+
+```txt
+Usage: --out [dir] --img [image] --fit [(cover)|contain|fill|inside|outside]
+
+Options:
+  --version   Show version number                                      [boolean]
+  -h, --help  Show help                                                [boolean]
+  -o, --out   Output directory
+                           [string] [required] [default: "android/app/src/main"]
+  -i, --img   Images to convert                              [string] [required]
+  -f, --fit   Image should be resized to fit both provided dimensions
+   [choices: "cover", "contain", "fill", "inside", "outside"] [default: "cover"]
+```
 
 ##### Fit option :
 
@@ -28,7 +41,3 @@ npm i -g rn-icon-gen-tool
 **inside**: Preserving aspect ratio, resize the image to be as large as possible while ensuring its dimensions are less than or equal to both those specified.
 
 **outside**: Preserving aspect ratio, resize the image to be as small as possible while ensuring its dimensions are greater than or equal to both those specified.
-
-copy the generated folders to your project folder in
-
-> /your/project/path/android/app/src/main
