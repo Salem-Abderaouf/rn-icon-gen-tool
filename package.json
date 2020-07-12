@@ -1,6 +1,6 @@
 {
   "name": "rn-icon-gen-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tool to generate images for react-native",
   "type": "module",
   "main": "./lib/app.js",
