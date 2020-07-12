@@ -1,6 +1,6 @@
 {
   "name": "rn-icon-gen-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tool to generate images for react-native",
   "type": "module",
   "main": "./lib/app.js",
@@ -20,7 +20,17 @@
     "generator",
     "resize"
   ],
-  "author": "Selama Salem Abderaouf",
+  "contributors": [{
+      "name": "Selama Salem Abderaouf",
+      "email": "salem@softvenue.net",
+      "url": "https://github.com/Salem-Abderaouf"
+    },
+    {
+      "name": "Aissaoui Ahmed",
+      "email": "aissaoui@softvenue.net",
+      "url": "https://github.com/Aissaoui-Ahmed"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Salem-Abderaouf/rn-icon-gen-tool/issues"
