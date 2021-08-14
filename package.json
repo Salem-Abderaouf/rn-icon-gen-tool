@@ -1,7 +1,7 @@
 {
   "name": "rn-icon-gen-tool",
-  "version": "1.0.3",
-  "description": "Tool to generate images for react-native",
+  "version": "2.0.0",
+  "description": "CLI Tool to generate icons for react-native app , Both Android and Ios are supported",
   "type": "module",
   "main": "./lib/app.js",
   "bin": {
@@ -18,6 +18,9 @@
   "keywords": [
     "react-native",
     "image",
+    "ios",
+    "android",
+    "platform",
     "generator",
     "resize"
   ],
