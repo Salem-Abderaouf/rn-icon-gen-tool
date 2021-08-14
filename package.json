@@ -16,11 +16,13 @@
     "url": "git+https://github.com/Salem-Abderaouf/rn-icon-gen-tool.git"
   },
   "keywords": [
+    "react-native",
     "image",
     "generator",
     "resize"
   ],
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Selama Salem Abderaouf",
       "email": "salem@softvenue.net",
       "url": "https://github.com/Salem-Abderaouf"

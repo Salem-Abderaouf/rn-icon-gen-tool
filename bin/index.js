@@ -26,6 +26,12 @@ const cli = yargs
     choices: ['cover', 'contain', 'fill', 'inside', 'outside'],
     default: 'cover',
   })
+  .option('p', {
+    alias: 'platform',
+    desc: 'Platform ',
+    choices: ['android', 'ios', 'both'],
+    default: 'both',
+  })
   .argv;
 
-GenerateIcon(cli.i, cli.o, cli.f);
+GenerateIcon(cli.i, cli.o, cli.f, cli.p);
