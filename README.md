@@ -2,8 +2,7 @@
 
 ## Description :
 
-Tool for react native developer to generate icons based on image with there file
-structure
+CLI tool for react native developers to generate icons based on an image, Both Android and Ios are supported
 
 ## Install :
 
@@ -18,7 +17,7 @@ generate-icons --help
 ```
 
 ```txt
-Usage: --out [dir] --img [image] --fit [(cover)|contain|fill|inside|outside]
+Usage: --out [dir] --img [image] --fit [(cover)|contain|fill|inside|outside] --platform [(both)|android|ios]
 
 Options:
   --version   Show version number                                      [boolean]
@@ -28,6 +27,8 @@ Options:
   -i, --img   Images to convert                              [string] [required]
   -f, --fit   Image should be resized to fit both provided dimensions
    [choices: "cover", "contain", "fill", "inside", "outside"] [default: "cover"]
+  -p, --platform to generate icons based on target platform  
+   [choices: "both", "android", "ios"] [default: "both"]
 ```
 
 ##### Fit option :
