@@ -3,7 +3,7 @@
 ## Description :
 
 CLI tool for react native developers to generate icons based on an image, Both Android and Ios are supported
-
+https://github.com/Salem-Abderaouf/rn-icon-gen-tool/blob/7640e72b093f8b5e8c5f4ed4cbcba2378f1fe0f8/lib/app.js#L42-L46
 ## Install :
 
 ```bash
