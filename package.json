@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/Salem-Abderaouf/rn-icon-gen-tool#readme",
   "dependencies": {
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
